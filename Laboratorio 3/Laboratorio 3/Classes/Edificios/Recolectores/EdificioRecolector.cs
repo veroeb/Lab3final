@@ -8,5 +8,6 @@ namespace Laboratorio_3.Classes.Edificios.Recolectores
 {
     public abstract class EdificioRecolector : Edificio
     {
+        public int ProduccionPorSegundo { get; set; }
     }
 }

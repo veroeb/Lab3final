@@ -8,5 +8,9 @@ namespace Laboratorio_3.Classes.Edificios.Cuarteles
 {
     public class CuartelOscuro : Cuarteles
     {
+        public CuartelOscuro()
+        {
+            CantidadEdificios = 2;
+        }
     }
 }

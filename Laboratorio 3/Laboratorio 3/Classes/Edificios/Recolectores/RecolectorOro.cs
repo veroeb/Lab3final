@@ -8,5 +8,9 @@ namespace Laboratorio_3.Classes.Edificios.Recolectores
 {
     public class RecolectorOro : EdificioRecolector
     {
+        public RecolectorOro()
+        {
+            ProduccionPorSegundo = 50;
+        }
     }
 }

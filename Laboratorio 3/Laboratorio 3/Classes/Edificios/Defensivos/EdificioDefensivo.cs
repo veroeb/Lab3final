@@ -8,5 +8,6 @@ namespace Laboratorio_3.Classes.Edificios.Defensivos
 {
     public abstract class EdificioDefensivo : Edificio
     {
+        protected int DañoPorSegundo { get; set; }
     }
 }

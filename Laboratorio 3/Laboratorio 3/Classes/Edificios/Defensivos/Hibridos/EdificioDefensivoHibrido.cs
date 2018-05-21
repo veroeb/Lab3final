@@ -8,5 +8,8 @@ namespace Laboratorio_3.Classes.Edificios.Defensivos.Hibridos
 {
     public abstract class EdificioDefensivoHibrido : EdificioDefensivo
     {
+        protected void AtacarTropas()
+        {
+        }
     }
 }

@@ -8,5 +8,11 @@ namespace Laboratorio_3.Classes.Edificios.Defensivos.Hibridos
 {
     public class Ballesta : EdificioDefensivoHibrido
     {
+        public Ballesta()
+        {
+            Nombre = "Ballesta";
+            Nivel = 1;
+            Vida = 1500;
+        }
     }
 }

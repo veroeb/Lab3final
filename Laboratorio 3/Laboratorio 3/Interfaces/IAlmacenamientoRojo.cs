@@ -8,5 +8,8 @@ namespace Laboratorio_3.Interfaces
 {
     interface IAlmacenamientoRojo
     {
+        int GuardarElixirRojo(int g);
+        int CapacidadActualElixirRojo { get; set; }
+        int CapacidadAlmacenamientoElixirRojo { get; set; }
     }
 }
