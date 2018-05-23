@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_3.Classes.Tropas
 {
-    public abstract class Tropa : Aldea
+    public abstract class Tropa
     {
+        protected String Nombre { get; set; }
         protected int Espacio { get; set; }
         protected int Velocidad { get; set; }
         protected int Daño { get; set; }
+        protected Int32 Nivel;
     }
 }

@@ -54,6 +54,7 @@
     <Compile Include="Classes\Edificios\Almacenamiento\Campamento.cs" />
     <Compile Include="Classes\Edificios\Almacenamiento\Castillo.cs" />
     <Compile Include="Classes\Edificios\Almacenamiento\EdificioAlmacenamiento.cs" />
+    <Compile Include="Classes\Componente.cs" />
     <Compile Include="Classes\Edificios\Cuarteles\Cuarteles.cs" />
     <Compile Include="Classes\Edificios\Cuarteles\CuartelNoOscuro.cs" />
     <Compile Include="Classes\Edificios\Cuarteles\CuartelOscuro.cs" />
