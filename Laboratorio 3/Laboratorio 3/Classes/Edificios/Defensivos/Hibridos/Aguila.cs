@@ -13,6 +13,8 @@ namespace Laboratorio_3.Classes.Edificios.Defensivos.Hibridos
             Nombre = "Águila de Artillería";
             Nivel = 1;
             Vida = 4000;
+            ConsumoOro = 8000000;
+            CantidadEdificios = 1;
         }
     }
 }

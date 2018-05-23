@@ -10,5 +10,6 @@ namespace Laboratorio_3.Classes
     {
         protected string Nombre { get; set; }
         protected int Nivel { get; set; }
+        protected int Vida { get; set; }
     }
 }

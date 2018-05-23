@@ -8,7 +8,6 @@ namespace Laboratorio_3.Classes.Edificios
 {
     public abstract class Edificio : Aldea
     {
-        protected int Vida { get; set; }
         protected int CantidadEdificios { get; set; }
     }
 }

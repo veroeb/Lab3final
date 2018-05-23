@@ -8,5 +8,8 @@ namespace Laboratorio_3.Classes.Tropas
 {
     public abstract class Tropa : Aldea
     {
+        protected int Espacio { get; set; }
+        protected int Velocidad { get; set; }
+        protected int Daño { get; set; }
     }
 }

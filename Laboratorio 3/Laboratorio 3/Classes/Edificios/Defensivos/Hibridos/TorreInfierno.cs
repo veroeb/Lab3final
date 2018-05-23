@@ -13,6 +13,8 @@ namespace Laboratorio_3.Classes.Edificios.Defensivos.Hibridos
             Nombre = "Torre Infierno";
             Nivel = 1;
             Vida = 1500;
+            ConsumoOro = 5000000;
+            CantidadEdificios = 2;
         }
     }
 }

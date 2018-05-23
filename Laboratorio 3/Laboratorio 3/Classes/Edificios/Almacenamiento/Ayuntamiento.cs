@@ -15,6 +15,9 @@ namespace Laboratorio_3.Classes.Edificios.Almacenamiento
         public Ayuntamiento()
         {
             CantidadEdificios = 1;
+            Nombre = "Ayuntamiento";
+            Nivel = 1;
+            Vida = 5000;
             CapacidadActual = 0;
             CapacidadAlmacenamiento = 2000;
             CapacidadActualElixirRojo = 0;

@@ -8,5 +8,15 @@ namespace Laboratorio_3.Classes.Tropas.Heroes
 {
     public class Reina : Heroe
     {
+        public Reina()
+        {
+            Nombre = "Reina";
+            Nivel = 1;
+            Vida = 725;
+            Daño = 160;
+            Velocidad = 24;
+            Espacio = 20;
+            PoderEspecial();
+        }
     }
 }

@@ -8,5 +8,15 @@ namespace Laboratorio_3.Classes.Tropas.Oscuras
 {
     public class Bruja : TropaOscura
     {
+        public Bruja()
+        {
+            Nombre = "Bruja";
+            Nivel = 1;
+            Vida = 270;
+            Daño = 50;
+            Velocidad = 12;
+            Espacio = 12;
+            ConsumoNegro = 250;
+        }
     }
 }

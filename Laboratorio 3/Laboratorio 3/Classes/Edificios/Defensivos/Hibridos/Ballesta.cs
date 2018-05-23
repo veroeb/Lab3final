@@ -13,6 +13,8 @@ namespace Laboratorio_3.Classes.Edificios.Defensivos.Hibridos
             Nombre = "Ballesta";
             Nivel = 1;
             Vida = 1500;
+            ConsumoOro = 3000000;
+            CantidadEdificios = 2;
         }
     }
 }

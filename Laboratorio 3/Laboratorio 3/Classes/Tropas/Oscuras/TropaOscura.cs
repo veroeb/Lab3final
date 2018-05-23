@@ -8,5 +8,6 @@ namespace Laboratorio_3.Classes.Tropas.Oscuras
 {
     public abstract class TropaOscura : Tropa
     {
+        protected int ConsumoNegro { get; set; }
     }
 }

@@ -8,5 +8,10 @@ namespace Laboratorio_3.Classes.Edificios.Almacenamiento.Almacenes
 {
     public class AlmacenElixirRojo : Almacenes
     {
+        public AlmacenElixirRojo()
+        {
+            CapacidadAlmacenamiento = 500;
+            CapacidadActual = 0;
+        }
     }
 }

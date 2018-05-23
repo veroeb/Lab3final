@@ -8,5 +8,10 @@ namespace Laboratorio_3.Classes.Edificios.Almacenamiento.Almacenes
 {
     public class AlmacenOro : Almacenes
     {
+        public AlmacenOro()
+        {
+            CapacidadAlmacenamiento = 200;
+            CapacidadActual = 0;
+        }
     }
 }
