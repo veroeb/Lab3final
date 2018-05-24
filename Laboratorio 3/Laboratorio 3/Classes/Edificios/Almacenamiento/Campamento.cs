@@ -10,7 +10,7 @@ namespace Laboratorio_3.Classes.Edificios.Almacenamiento
     {
         public Campamento()
         {
-            CapacidadAlmacenamiento = 20;
+            CapacidadAlmacenamiento = 200;
             CapacidadActual = 0;
             CantidadEdificios = 4;
         }

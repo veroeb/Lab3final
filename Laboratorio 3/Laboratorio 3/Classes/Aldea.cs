@@ -7,16 +7,23 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_3.Classes
 {
-    class Aldea : Componente
+    public class Aldea : Componente
     {
-        protected string Nombre { get; set; }
-        protected int Nivel;
-        protected int Vida;
         protected Int32 AlmacenOro;
         protected Int32 AlmacenER;
         protected Int32 AlmacenEN;
 
-        public Aldea(String nombre)
+        private static Aldea Instancia = null;
+        public static Aldea GetInstancia(string nombre)
+        {
+            if (Instancia == null)
+            {
+                Instancia = new Aldea(nombre);
+            }
+            return Instancia;
+        }
+
+        private Aldea(string nombre)
         {
             Nombre = nombre;
             Nivel = 1;

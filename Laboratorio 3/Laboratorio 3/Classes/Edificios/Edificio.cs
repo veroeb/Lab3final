@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_3.Classes.Edificios
 {
-    public abstract class Edificio
+    public abstract class Edificio : Componente
     {
-        protected String Nombre { get; set; }
         protected int CantidadEdificios { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_3.Classes.Edificios
 {
-    abstract class Componente
+    public abstract class Componente
     {
         public String Nombre { get; set; }
         public Int32 Vida { get; set; }

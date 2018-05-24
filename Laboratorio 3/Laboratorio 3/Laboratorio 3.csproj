@@ -77,6 +77,7 @@
     <Compile Include="Classes\Edificios\Recolectores\RecolectorElixirNegro.cs" />
     <Compile Include="Classes\Edificios\Recolectores\RecolectorElixirRojo.cs" />
     <Compile Include="Classes\Edificios\Recolectores\RecolectorOro.cs" />
+    <Compile Include="Classes\ManagerRecursos.cs" />
     <Compile Include="Classes\Tropas\Heroes\Heroe.cs" />
     <Compile Include="Classes\Tropas\Heroes\Reina.cs" />
     <Compile Include="Classes\Tropas\Heroes\Rey.cs" />
@@ -103,17 +104,74 @@
     <Compile Include="Classes\Tropas\Oscuras\TropaOscura.cs" />
     <Compile Include="Classes\Tropas\Oscuras\Valkiria.cs" />
     <Compile Include="Classes\Tropas\Tropa.cs" />
-    <Compile Include="Forms\Form1.cs">
+    <Compile Include="Forms\Aldea.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\Aldea.Designer.cs">
+      <DependentUpon>Aldea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Defensas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Defensas.Designer.cs">
+      <DependentUpon>Defensas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ejercito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ejercito.Designer.cs">
+      <DependentUpon>Ejercito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LaunchScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LaunchScreen.Designer.cs">
+      <DependentUpon>LaunchScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recursos.Designer.cs">
+      <DependentUpon>Recursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Shop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Shop.Designer.cs">
+      <DependentUpon>Shop.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IAlmacenamientoNegro.cs" />
     <Compile Include="Interfaces\IAlmacenamientoRojo.cs" />
     <Compile Include="Interfaces\IAlmacenamientoTropas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Aldea.resx">
+      <DependentUpon>Aldea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Defensas.resx">
+      <DependentUpon>Defensas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ejercito.resx">
+      <DependentUpon>Ejercito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LaunchScreen.resx">
+      <DependentUpon>LaunchScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recursos.resx">
+      <DependentUpon>Recursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Shop.resx">
+      <DependentUpon>Shop.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
