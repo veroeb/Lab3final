@@ -5,22 +5,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboratorio_3.Classes.Edificios.Almacenamiento
+namespace Laboratorio_3.Classes.Edificios.Almacenamiento.Almacenes
 {
-    public class Ayuntamiento : EdificioAlmacenamiento, IAlmacenamientoRojo
+    public class Ayuntamiento:Almacenes,IAlmacenamientoRojo,IAlmacenamientoOro
     {
         public int CapacidadActualElixirRojo { get; set; }
         public int CapacidadAlmacenamientoElixirRojo { get; set; }
+        public int CapacidadActualOro { get; set; }
+        public int CapacidadAlmacenamientoOro { get; set; }
 
         public Ayuntamiento()
         {
-            CantidadEdificios = 1;
+            
             Nombre = "Ayuntamiento";
             Nivel = 1;
             Vida = 5000;
-            CapacidadActual = 0;
-            CapacidadAlmacenamiento = 2000;
+            CapacidadActualOro = 0;
             CapacidadActualElixirRojo = 0;
+            CapacidadAlmacenamientoOro = 2000;
             CapacidadAlmacenamientoElixirRojo = 2000;
         }
 
@@ -40,5 +42,19 @@ namespace Laboratorio_3.Classes.Edificios.Almacenamiento
             }
         }
 
+        public int GuardarOro(int g)
+        {
+            if(CapacidadActualOro + g <= CapacidadAlmacenamientoOro)
+            {
+                CapacidadActualOro += g;
+                return 0;
+            }
+            else
+            {
+                int disponible = CapacidadAlmacenamientoOro - CapacidadActualOro;
+                CapacidadActualOro += disponible;
+                return g - disponible;
+            }
+        }
     }
 }

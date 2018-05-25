@@ -5,13 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboratorio_3.Classes.Edificios.Almacenamiento
+namespace Laboratorio_3.Classes.Edificios.Almacenamiento.Almacenes
 {
-    public class Castillo : EdificioAlmacenamiento, IAlmacenamientoTropas, IAlmacenamientoNegro, IAlmacenamientoRojo
+    public class Castillo : Almacenes, IAlmacenamientoTropas, IAlmacenamientoNegro, IAlmacenamientoRojo, IAlmacenamientoOro
     {
         public Castillo()
         {
-            CantidadEdificios = 1;
             Nombre = "Castillo";
             Nivel = 1;
             Vida = 5000;
@@ -55,9 +54,39 @@ namespace Laboratorio_3.Classes.Edificios.Almacenamiento
 
         public int CapacidadActualTropa { get; set; }
         public int CapacidadAlmacenamientoTropa { get; set; }
-        public int GuardarTropa(int g)
+        public int CapacidadActualOro { get; set; }
+        public int CapacidadAlmacenamientoOro { get; set; }
+        public int GuardarOro(int g)
         {
-            return 0;
+            if (CapacidadActualOro + g <= CapacidadAlmacenamientoOro)
+            {
+                CapacidadActualOro += g;
+                return 0;
+            }
+            else
+            {
+                int Diisponible = CapacidadAlmacenamientoOro - CapacidadActualOro;
+
+                CapacidadActualOro += Diisponible;
+                return g - Diisponible;
+            }
         }
-    }
+
+        public int GuardarTropa(int t)
+        {
+            if (CapacidadActualTropa + t <= CapacidadAlmacenamientoTropa)
+            {
+                CapacidadActualTropa += t;
+                return 0;
+            }
+            else
+            {
+                int Disponible = CapacidadAlmacenamientoTropa - CapacidadActualTropa;
+
+                CapacidadActualTropa += Disponible;
+                return t - Disponible;
+            }
+        }
+    }       
+    
 }

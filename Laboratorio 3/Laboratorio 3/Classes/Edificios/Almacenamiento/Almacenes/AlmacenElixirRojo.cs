@@ -11,7 +11,7 @@ namespace Laboratorio_3.Classes.Edificios.Almacenamiento.Almacenes
         public AlmacenElixirRojo()
         {
             CapacidadAlmacenamiento = 500;
-            CapacidadActual = 0;
+            CantActual = 0;
         }
     }
 }

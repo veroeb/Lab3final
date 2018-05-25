@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboratorio_3.Classes.Edificios.Almacenamiento
+namespace Laboratorio_3.Classes.Edificios.Almacenamiento.Almacenes
 {
-    public class Campamento : EdificioAlmacenamiento
+    public class Campamento : Almacenes
     {
         public Campamento()
         {
-            CapacidadAlmacenamiento = 200;
-            CapacidadActual = 0;
-            CantidadEdificios = 4;
+            CapacidadAlmacenamiento = 20;
+            CantActual = 0;
         }
     }
 }

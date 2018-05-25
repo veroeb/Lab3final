@@ -147,6 +147,7 @@
       <DependentUpon>Shop.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IAlmacenamientoNegro.cs" />
+    <Compile Include="Interfaces\IAlmacenamientoOro.cs" />
     <Compile Include="Interfaces\IAlmacenamientoRojo.cs" />
     <Compile Include="Interfaces\IAlmacenamientoTropas.cs" />
     <Compile Include="Program.cs" />
