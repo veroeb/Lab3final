@@ -29,11 +29,11 @@ namespace Laboratorio_3.Forms
 
         private void btnRecursos_Click(object sender, EventArgs e)
         {
-            Hide();
+            //Hide();
             using (Recursos recursos = new Recursos())
             {
                 recursos.ShowDialog();
-                Application.Exit();
+               // Application.Exit();
             }
         }
 
@@ -55,6 +55,12 @@ namespace Laboratorio_3.Forms
                 ejercito.ShowDialog();
                 Application.Exit();
             }
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+           Close();
+          
         }
     }
 }

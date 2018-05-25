@@ -16,8 +16,9 @@ namespace Laboratorio_3.Classes
     public class Aldea
     {
         //Codigo de Singleton para que no se pueda crear mas de una Aldea
-        private static Aldea Instancia = null;
-        private static Aldea GetInstancia()
+        public static Aldea Instancia = null;
+
+        public static Aldea GetInstancia()
         {
             if (Instancia == null)
             {
@@ -55,11 +56,17 @@ namespace Laboratorio_3.Classes
         List<Campamento> Campamentos = new List<Campamento>(); //4 max
         List<AlmacenElixirRojo> AlmacenesRojo = new List<AlmacenElixirRojo>(); //4 max
         List<AlmacenOro> AlmacenesOro = new List<AlmacenOro>();//4 max
+        List<AlmacenElixirNegro> AlmacenesNegro = new List<AlmacenElixirNegro>();
         List<RecolectorElixirNegro> ProdNegro = new List<RecolectorElixirNegro>();//3 max
         List<RecolectorElixirRojo> ProdRojo = new List<RecolectorElixirRojo>();//6 max
         List<RecolectorOro> ProdOro = new List<RecolectorOro>();//6 max
         List<EdificioDefensivo> Defensivos = new List<EdificioDefensivo>();
 
+
+        public List<RecolectorOro> GetProdOro()
+        {
+            return ProdOro;
+        }
 
         //Metodos para agregar todos los edificios a sus respectivas listas
         public void AgregarCampamento(Campamento c)
@@ -97,6 +104,11 @@ namespace Laboratorio_3.Classes
         public void AgregarAlmacenRojo(AlmacenElixirRojo ar)
         {
             AlmacenesRojo.Add(ar);
+        }
+
+        public void AgregarAlmacenNegro(AlmacenElixirNegro an)
+        {
+            AlmacenesNegro.Add(an);
         }
 
 
@@ -139,7 +151,7 @@ namespace Laboratorio_3.Classes
         public AlmacenElixirNegro AlmacenNegro { get; set; }
 
         //Funcion de los recolectores (ORO)
-        public void RecolectarOro()
+        public int RecolectarOro()
         {
             int ultimo = AlmacenesOro.Count() - 1;
             int oro = 0;
@@ -159,7 +171,7 @@ namespace Laboratorio_3.Classes
                         oro = a;
                     }
 
-                    if (al == AlmacenesOro[ultimo] && al.Lleno())
+                    else if (al == AlmacenesOro[ultimo] && al.Lleno())
                     {
                         int b = Ayu.Guardar(oro);
                         oro = b;
@@ -169,11 +181,11 @@ namespace Laboratorio_3.Classes
                             int final = Cas.Guardar(oro);
                         }
                     }
-                    if (oro == 0) break;
+                    else if (oro == 0) break;
                 }
                 break;
             }
-
+            return oro;
 
         }
         public String MostrarOro()
@@ -188,12 +200,14 @@ namespace Laboratorio_3.Classes
                     if (ok == AlmacenesOro[ultimo])
                     {
                         total += ok.CantActual;
+                        ManagerRecursos.CantidadOro = total;
                         String r = "El oro es: " + total.ToString();
                         return r;
                     }
                     else
                     {
                         total += ok.CantActual;
+                        ManagerRecursos.CantidadOro = total;
                     }
                 }
             }
@@ -214,7 +228,7 @@ namespace Laboratorio_3.Classes
             {
                 CantOro += Ayu.CantActual;
             }
-            if (AlmacenesOro.Count == almacenOroMax && Cas != null)
+            else if (AlmacenesOro.Count == almacenOroMax && Cas != null)
             {
                 CantOro += Cas.CantActual;
             }
@@ -240,7 +254,7 @@ namespace Laboratorio_3.Classes
                         a = ar.Guardar(rojo);
                         rojo = a;
                     }
-                    if (ar == AlmacenesRojo[ultimo] && ar.Lleno())
+                    else if (ar == AlmacenesRojo[ultimo] && ar.Lleno())
                     {
                         int b = Ayu.GuardarElixirRojo(rojo);
                         rojo = b;
@@ -250,7 +264,7 @@ namespace Laboratorio_3.Classes
                             int final = Cas.GuardarElixirRojo(rojo);
                         }
                     }
-                    if (rojo == 0) break;
+                    else if (rojo == 0) break;
                 }
                 break;
             }
@@ -267,12 +281,14 @@ namespace Laboratorio_3.Classes
                     if (ok == AlmacenesRojo[ultimo])
                     {
                         total += ok.CantActual;
-                        String r = "El elixir rojo es es: " + total.ToString();
+                        ManagerRecursos.CantidadElixirRojo = total;
+                        String r = "El elixir rojo es: " + total.ToString();
                         return r;
                     }
                     else
                     {
                         total += ok.CantActual;
+                        ManagerRecursos.CantidadElixirRojo = total;
                     }
                 }
             }
@@ -295,12 +311,38 @@ namespace Laboratorio_3.Classes
                     a = AlmacenNegro.Guardar(negro);
                     negro = a;
                 }
-                if (negro > 0)
+                else if (negro > 0)
                 {
                     int fin = Cas.GuardarElixirNegro(negro);
                 }
                 break;
             }
+        }
+
+        public String MostrarNegro()
+        {
+            int total = 0;
+            if (AlmacenesNegro.Count > 0)
+            {
+                foreach (AlmacenElixirNegro ok in AlmacenesNegro)
+                {
+                    int ultimo = AlmacenesNegro.Count() - 1;
+
+                    if (ok == AlmacenesNegro[ultimo])
+                    {
+                        total += ok.CantActual;
+                        ManagerRecursos.CantidadElixirNegro = total;
+                        String r = "El elixir oscuro es: " + total.ToString();
+                        return r;
+                    }
+                    else
+                    {
+                        total += ok.CantActual;
+                        ManagerRecursos.CantidadElixirNegro = total;
+                    }
+                }
+            }
+            return "Debe crear almacenes para almacenar elixir oscuro";
         }
     }
 }

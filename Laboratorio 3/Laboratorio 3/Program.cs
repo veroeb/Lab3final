@@ -17,7 +17,10 @@ namespace Laboratorio_3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LaunchScreen());
+
+            LaunchScreen launchScreen = new LaunchScreen();
+
+            Application.Run(launchScreen);
         }
     }
 }

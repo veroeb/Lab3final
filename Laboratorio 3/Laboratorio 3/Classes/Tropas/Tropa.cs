@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_3.Classes.Tropas
 {
-    public abstract class Tropa:Componente
-    {
-        protected String Nombre { get; set; }
-        protected int Espacio { get; set; }
-        protected int Velocidad { get; set; }
-        protected int Daño { get; set; }
-        protected Int32 Nivel;
+    public class Tropa:Componente
+    {       
+        public int Espacio { get; set; }
+        public int Velocidad { get; set; }
+        public int Daño { get; set; }    
+        
+        
     }
 }

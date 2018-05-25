@@ -38,10 +38,31 @@
             this.lblElixirRojo = new System.Windows.Forms.Label();
             this.lblElixirNegro = new System.Windows.Forms.Label();
             this.btnShop = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.almacenRojo = new System.Windows.Forms.PictureBox();
+            this.recolectorRojo = new System.Windows.Forms.PictureBox();
+            this.lblAlmRojo = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.recolectorNegro = new System.Windows.Forms.PictureBox();
+            this.almacenNegro = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.recolectorOro = new System.Windows.Forms.PictureBox();
+            this.almacenOro = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.almacenRojo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.recolectorRojo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.recolectorNegro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.almacenNegro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.recolectorOro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.almacenOro)).BeginInit();
             this.SuspendLayout();
             // 
             // lblAldea
@@ -107,11 +128,12 @@
             this.lblOro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblOro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOro.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblOro.Location = new System.Drawing.Point(790, 13);
+            this.lblOro.Location = new System.Drawing.Point(791, 13);
             this.lblOro.Name = "lblOro";
-            this.lblOro.Size = new System.Drawing.Size(50, 16);
+            this.lblOro.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblOro.Size = new System.Drawing.Size(33, 16);
             this.lblOro.TabIndex = 8;
-            this.lblOro.Text = "lblOro";
+            this.lblOro.Text = "Oro";
             this.lblOro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblElixirRojo
@@ -121,11 +143,12 @@
             this.lblElixirRojo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblElixirRojo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblElixirRojo.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblElixirRojo.Location = new System.Drawing.Point(751, 45);
+            this.lblElixirRojo.Location = new System.Drawing.Point(791, 45);
             this.lblElixirRojo.Name = "lblElixirRojo";
-            this.lblElixirRojo.Size = new System.Drawing.Size(92, 16);
+            this.lblElixirRojo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblElixirRojo.Size = new System.Drawing.Size(75, 16);
             this.lblElixirRojo.TabIndex = 9;
-            this.lblElixirRojo.Text = "lblElixirRojo";
+            this.lblElixirRojo.Text = "ElixirRojo";
             this.lblElixirRojo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblElixirNegro
@@ -135,11 +158,12 @@
             this.lblElixirNegro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblElixirNegro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblElixirNegro.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblElixirNegro.Location = new System.Drawing.Point(745, 78);
+            this.lblElixirNegro.Location = new System.Drawing.Point(791, 78);
             this.lblElixirNegro.Name = "lblElixirNegro";
-            this.lblElixirNegro.Size = new System.Drawing.Size(102, 16);
+            this.lblElixirNegro.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblElixirNegro.Size = new System.Drawing.Size(85, 16);
             this.lblElixirNegro.TabIndex = 10;
-            this.lblElixirNegro.Text = "lblElixirNegro";
+            this.lblElixirNegro.Text = "ElixirNegro";
             this.lblElixirNegro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnShop
@@ -159,6 +183,160 @@
             this.btnShop.UseVisualStyleBackColor = false;
             this.btnShop.Click += new System.EventHandler(this.btnShop_Click_1);
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(11, 87);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(84, 84);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 12;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 78);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 16);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Mi Ayuntamiento";
+            // 
+            // almacenRojo
+            // 
+            this.almacenRojo.BackColor = System.Drawing.Color.Transparent;
+            this.almacenRojo.Image = ((System.Drawing.Image)(resources.GetObject("almacenRojo.Image")));
+            this.almacenRojo.Location = new System.Drawing.Point(11, 283);
+            this.almacenRojo.Name = "almacenRojo";
+            this.almacenRojo.Size = new System.Drawing.Size(84, 84);
+            this.almacenRojo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.almacenRojo.TabIndex = 14;
+            this.almacenRojo.TabStop = false;
+            // 
+            // recolectorRojo
+            // 
+            this.recolectorRojo.BackColor = System.Drawing.Color.Transparent;
+            this.recolectorRojo.Image = ((System.Drawing.Image)(resources.GetObject("recolectorRojo.Image")));
+            this.recolectorRojo.Location = new System.Drawing.Point(11, 416);
+            this.recolectorRojo.Name = "recolectorRojo";
+            this.recolectorRojo.Size = new System.Drawing.Size(84, 84);
+            this.recolectorRojo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.recolectorRojo.TabIndex = 15;
+            this.recolectorRojo.TabStop = false;
+            // 
+            // lblAlmRojo
+            // 
+            this.lblAlmRojo.AutoSize = true;
+            this.lblAlmRojo.BackColor = System.Drawing.Color.Transparent;
+            this.lblAlmRojo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlmRojo.Location = new System.Drawing.Point(8, 264);
+            this.lblAlmRojo.Name = "lblAlmRojo";
+            this.lblAlmRojo.Size = new System.Drawing.Size(93, 16);
+            this.lblAlmRojo.TabIndex = 16;
+            this.lblAlmRojo.Text = "Almacen Rojo";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(8, 397);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 16);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Recolector Rojo";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(133, 397);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 16);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Recolector Oscuro";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(133, 264);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 16);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Almacen Oscuro";
+            // 
+            // recolectorNegro
+            // 
+            this.recolectorNegro.BackColor = System.Drawing.Color.Transparent;
+            this.recolectorNegro.Image = ((System.Drawing.Image)(resources.GetObject("recolectorNegro.Image")));
+            this.recolectorNegro.Location = new System.Drawing.Point(136, 416);
+            this.recolectorNegro.Name = "recolectorNegro";
+            this.recolectorNegro.Size = new System.Drawing.Size(84, 84);
+            this.recolectorNegro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.recolectorNegro.TabIndex = 19;
+            this.recolectorNegro.TabStop = false;
+            // 
+            // almacenNegro
+            // 
+            this.almacenNegro.BackColor = System.Drawing.Color.Transparent;
+            this.almacenNegro.Image = ((System.Drawing.Image)(resources.GetObject("almacenNegro.Image")));
+            this.almacenNegro.Location = new System.Drawing.Point(136, 283);
+            this.almacenNegro.Name = "almacenNegro";
+            this.almacenNegro.Size = new System.Drawing.Size(84, 84);
+            this.almacenNegro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.almacenNegro.TabIndex = 18;
+            this.almacenNegro.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(257, 397);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(99, 16);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Recolector Oro";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(257, 264);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 16);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Almacen Oro";
+            // 
+            // recolectorOro
+            // 
+            this.recolectorOro.BackColor = System.Drawing.Color.Transparent;
+            this.recolectorOro.Image = ((System.Drawing.Image)(resources.GetObject("recolectorOro.Image")));
+            this.recolectorOro.Location = new System.Drawing.Point(260, 416);
+            this.recolectorOro.Name = "recolectorOro";
+            this.recolectorOro.Size = new System.Drawing.Size(84, 84);
+            this.recolectorOro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.recolectorOro.TabIndex = 23;
+            this.recolectorOro.TabStop = false;
+            // 
+            // almacenOro
+            // 
+            this.almacenOro.BackColor = System.Drawing.Color.Transparent;
+            this.almacenOro.Image = ((System.Drawing.Image)(resources.GetObject("almacenOro.Image")));
+            this.almacenOro.Location = new System.Drawing.Point(260, 283);
+            this.almacenOro.Name = "almacenOro";
+            this.almacenOro.Size = new System.Drawing.Size(84, 84);
+            this.almacenOro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.almacenOro.TabIndex = 22;
+            this.almacenOro.TabStop = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,6 +344,20 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(890, 512);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.recolectorOro);
+            this.Controls.Add(this.almacenOro);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.recolectorNegro);
+            this.Controls.Add(this.almacenNegro);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblAlmRojo);
+            this.Controls.Add(this.recolectorRojo);
+            this.Controls.Add(this.almacenRojo);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.btnShop);
             this.Controls.Add(this.lblElixirNegro);
             this.Controls.Add(this.lblElixirRojo);
@@ -176,13 +368,25 @@
             this.Controls.Add(this.lblAldea);
             this.Controls.Add(this.pictureBox2);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clash of Clans";
+            this.Load += new System.EventHandler(this.Home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.almacenRojo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.recolectorRojo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.recolectorNegro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.almacenNegro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.recolectorOro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.almacenOro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,5 +403,19 @@
         private System.Windows.Forms.Label lblElixirRojo;
         private System.Windows.Forms.Label lblElixirNegro;
         private System.Windows.Forms.Button btnShop;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox almacenRojo;
+        private System.Windows.Forms.PictureBox recolectorRojo;
+        private System.Windows.Forms.Label lblAlmRojo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox recolectorNegro;
+        private System.Windows.Forms.PictureBox almacenNegro;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox recolectorOro;
+        private System.Windows.Forms.PictureBox almacenOro;
     }
 }

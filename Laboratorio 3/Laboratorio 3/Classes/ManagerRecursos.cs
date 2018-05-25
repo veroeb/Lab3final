@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_3.Classes
 {
-    public class ManagerRecursos
+    public static class ManagerRecursos
     {
-        public Aldea Aldea { get; set; }
-        public Home Home { get; set; }
+        //public Aldea Aldea { get; set; }
+        //public Home Home { get; set; }
 
         //public void NombreAldeaR(string nombreAldea)
         //{
@@ -19,5 +19,12 @@ namespace Laboratorio_3.Classes
         //    //Home h = new Home();
         //    //h.NombreAldea(nombreAldea);
         //}
+
+        public static string NombreAldea;
+
+        public static int CantidadOro;
+        public static int CantidadElixirRojo;
+        public static int CantidadElixirNegro;
+
     }
 }
