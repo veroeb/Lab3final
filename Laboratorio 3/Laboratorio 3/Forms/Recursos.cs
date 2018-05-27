@@ -201,24 +201,24 @@ namespace Laboratorio_3.Forms
 
         private void btnCampamento_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ha creado un Campamento");
+            //MessageBox.Show("Ha creado un Campamento");
 
-            Aldea aldea = Aldea.GetInstancia();
+            //Aldea aldea = Aldea.GetInstancia();
 
-            Campamento campamento = new Campamento();
+            //Campamento campamento = new Campamento();
 
-            if (aldea.CapacidadCampamento())
-            {
+            //if (aldea.CapacidadCampamento())
+            //{
 
-                Campamento c = new Campamento();
-                aldea.AgregarCampamento(c);
-            }
-            else
-            {
-                MessageBox.Show("Capacidad Maxima alcanzada");
-                //Mensaje lleno , error.
+            //    Campamento c = new Campamento();
+            //    aldea.AgregarCampamento(c);
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Capacidad Maxima alcanzada");
+            //    //Mensaje lleno , error.
 
-            }
+            //}
         }
 
         private void Recursos_Load(object sender, EventArgs e)
