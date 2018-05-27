@@ -52,6 +52,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.recolectorOro = new System.Windows.Forms.PictureBox();
             this.almacenOro = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbRecolectores = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -337,6 +339,26 @@
             this.almacenOro.TabIndex = 22;
             this.almacenOro.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(155, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(109, 16);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Almacenamiento";
+            // 
+            // lbRecolectores
+            // 
+            this.lbRecolectores.FormattingEnabled = true;
+            this.lbRecolectores.Location = new System.Drawing.Point(157, 97);
+            this.lbRecolectores.Name = "lbRecolectores";
+            this.lbRecolectores.Size = new System.Drawing.Size(187, 95);
+            this.lbRecolectores.TabIndex = 26;
+            this.lbRecolectores.SelectedIndexChanged += new System.EventHandler(this.lbRecolectores_SelectedIndexChanged);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,6 +366,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(890, 512);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbRecolectores);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.recolectorOro);
@@ -417,5 +441,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox recolectorOro;
         private System.Windows.Forms.PictureBox almacenOro;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListBox lbRecolectores;
     }
 }

@@ -10,6 +10,7 @@ namespace Laboratorio_3.Classes.Edificios.Recolectores
     {
         public RecolectorElixirRojo()
         {
+            Nombre = "Recolector Elixir Rojo";
             ProduccionPorSegundo = 60;
         }
     }

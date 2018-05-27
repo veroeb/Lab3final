@@ -93,6 +93,8 @@ namespace Laboratorio_3.Classes
             return AlmacenesNegro;
         }
 
+
+
         //Metodos para agregar todos los edificios a sus respectivas listas
         public void AgregarCampamento(Campamento c)
         {
@@ -203,7 +205,8 @@ namespace Laboratorio_3.Classes
 
                         if (oro > 0)
                         {
-                            int final = Cas.Guardar(oro);
+                            Castillo castillo = new Castillo();
+                            int final = castillo.Guardar(oro);
                         }
                     }
                     else if (oro == 0) break;
@@ -331,14 +334,18 @@ namespace Laboratorio_3.Classes
             }
             while (a > 0)
             {
-                if (AlmacenNegro.Lleno() != true)
+                foreach (AlmacenElixirNegro almacenElixiNegro in AlmacenesNegro)
                 {
-                    a = AlmacenNegro.Guardar(negro);
-                    negro = a;
-                }
-                else if (negro > 0)
-                {
-                    int fin = Cas.GuardarElixirNegro(negro);
+                    if (AlmacenNegro.Lleno() != true)
+                    {
+                        a = AlmacenNegro.Guardar(negro);
+                        negro = a;
+                    }
+                    else if (negro > 0)
+                    {
+                        int fin = Cas.GuardarElixirNegro(negro);
+                    }
+                    else if (negro == 0) break;
                 }
                 break;
             }

@@ -39,7 +39,7 @@ namespace Laboratorio_3.Forms
             Aldea aldea = Aldea.GetInstancia();
 
             AlmacenOro almacenOro = new AlmacenOro();
-
+            
             if (aldea.CapacidadAlmacenOro())
             {
 
@@ -80,6 +80,8 @@ namespace Laboratorio_3.Forms
             RecolectorOro recolectorOro = new RecolectorOro();
 
             aldea.AgregarProductorOro(recolectorOro);
+
+            ManagerRecursos.GetRecolectorOro();
 
             aldea.RecolectarOro();
 
@@ -136,8 +138,6 @@ namespace Laboratorio_3.Forms
 
             aldea.RecolectarRojo();
 
-            //MessageBox.Show(aldea.MostrarRojo());
-            //MessageBox.Show("Rojo ayu: " + aldea.Ayu.CapacidadActualElixirRojo);
             MessageBox.Show(aldea.MostrarRojo());
         }
 
@@ -175,9 +175,6 @@ namespace Laboratorio_3.Forms
             if (aldea.AlmacenNegro != null)
             {
                 aldea.RecolectarNegro();
-                //MessageBox.Show(aldea.AlmacenNegro.CantActual.ToString());
-                MessageBox.Show($"Elixir oscuro en ayuntamiento: {aldea.AlmacenNegro.CantActual.ToString()}");
-                //MessageBox.Show($"Elixir oscuro en ayuntamiento: {aldea.Ayu.CantActual}");
                 MessageBox.Show(aldea.MostrarNegro());
             }
             else
@@ -201,24 +198,6 @@ namespace Laboratorio_3.Forms
 
         private void btnCampamento_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Ha creado un Campamento");
-
-            //Aldea aldea = Aldea.GetInstancia();
-
-            //Campamento campamento = new Campamento();
-
-            //if (aldea.CapacidadCampamento())
-            //{
-
-            //    Campamento c = new Campamento();
-            //    aldea.AgregarCampamento(c);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Capacidad Maxima alcanzada");
-            //    //Mensaje lleno , error.
-
-            //}
         }
 
         private void Recursos_Load(object sender, EventArgs e)

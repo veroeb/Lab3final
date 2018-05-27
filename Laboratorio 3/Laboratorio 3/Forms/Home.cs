@@ -1,5 +1,6 @@
 ﻿using Laboratorio_3.Classes;
 using Laboratorio_3.Classes.Edificios.Almacenamiento.Almacenes;
+using Laboratorio_3.Classes.Edificios.Recolectores;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -112,6 +113,15 @@ namespace Laboratorio_3.Forms
             lblOro.Text = ManagerRecursos.CantidadOro.ToString();
             lblElixirRojo.Text = ManagerRecursos.CantidadElixirRojo.ToString();
             lblElixirNegro.Text = ManagerRecursos.CantidadElixirNegro.ToString();
+        }
+
+        private void lbRecolectores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        public void AddRecolectorOro(RecolectorOro recolectorOro)
+        {
+            lbRecolectores.Items.Add(recolectorOro.Nombre);
         }
     }
 }

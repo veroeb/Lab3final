@@ -1,4 +1,5 @@
-﻿using Laboratorio_3.Forms;
+﻿using Laboratorio_3.Classes.Edificios.Recolectores;
+using Laboratorio_3.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,18 @@ namespace Laboratorio_3.Classes
         public static int CantidadOro;
         public static int CantidadElixirRojo;
         public static int CantidadElixirNegro;
+
+        public static void GetRecolectorOro()
+        {
+            Aldea aldea = Aldea.GetInstancia();
+
+            Home home = new Home();
+
+            foreach (RecolectorOro recolectorOro in aldea.GetProdOro())
+            {
+                home.AddRecolectorOro(recolectorOro);
+            }
+        }
 
     }
 }
