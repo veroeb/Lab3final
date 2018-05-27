@@ -39,21 +39,21 @@ namespace Laboratorio_3.Forms
 
         private void btnDefensas_Click(object sender, EventArgs e)
         {
-            Hide();
+            //Hide();
             using (Defensas defensas = new Defensas())
             {
                 defensas.ShowDialog();
-                Application.Exit();
+                //Application.Exit();
             }
         }
 
         private void btnEjercito_Click(object sender, EventArgs e)
         {
-            Hide();
+            //Hide();
             using (Ejercito ejercito = new Ejercito())
             {
                 ejercito.ShowDialog();
-                Application.Exit();
+                //Application.Exit();
             }
         }
 

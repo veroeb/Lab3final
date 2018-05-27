@@ -25,11 +25,11 @@ namespace Laboratorio_3.Forms
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            Hide();
+            //Hide();
             using (Home home = new Home())
             {
                 home.ShowDialog();
-                Application.Exit();
+                //Application.Exit();
             }
         }
     }

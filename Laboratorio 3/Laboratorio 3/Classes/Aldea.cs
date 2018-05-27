@@ -68,6 +68,31 @@ namespace Laboratorio_3.Classes
             return ProdOro;
         }
 
+        public List<RecolectorElixirRojo> GetElixirRojo()
+        {
+            return ProdRojo;
+        }
+
+        public List<RecolectorElixirNegro> GetElixirNegro()
+        {
+            return ProdNegro;
+        }
+
+        public List<AlmacenOro> GetAlmacenOro()
+        {
+            return AlmacenesOro;
+        }
+
+        public List<AlmacenElixirRojo> GetAlmacenRojo()
+        {
+            return AlmacenesRojo;
+        }
+
+        public List<AlmacenElixirNegro> GetAlmacenNegro()
+        {
+            return AlmacenesNegro;
+        }
+
         //Metodos para agregar todos los edificios a sus respectivas listas
         public void AgregarCampamento(Campamento c)
         {

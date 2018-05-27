@@ -59,8 +59,8 @@ namespace Laboratorio_3.Forms
             if (aldea.CapacidadProdOro())
             {
                 btnRecolectorOro.Show();
-                RecolectorOro n = new RecolectorOro();
-                aldea.AgregarProductorOro(n);
+                //RecolectorOro n = new RecolectorOro();
+                //aldea.AgregarProductorOro(n);
 
             }
             else
@@ -155,7 +155,8 @@ namespace Laboratorio_3.Forms
             {
                 btnAlmElixirNegro.Show();
                 AlmacenElixirNegro n = new AlmacenElixirNegro();
-                //aldea.AlmacenNegro = n;
+                aldea.AlmacenNegro = n;
+                aldea.AgregarAlmacenNegro(n);
             }
             else
             {
@@ -177,6 +178,7 @@ namespace Laboratorio_3.Forms
                 //MessageBox.Show(aldea.AlmacenNegro.CantActual.ToString());
                 MessageBox.Show($"Elixir oscuro en ayuntamiento: {aldea.AlmacenNegro.CantActual.ToString()}");
                 //MessageBox.Show($"Elixir oscuro en ayuntamiento: {aldea.Ayu.CantActual}");
+                MessageBox.Show(aldea.MostrarNegro());
             }
             else
             {
